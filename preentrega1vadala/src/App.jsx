@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import Greeting from './components/Greeting/Greeting'
+
+
 
 function App() {
   
@@ -13,6 +16,7 @@ function App() {
     <>
     <NavBar/>
     <ItemListContainer mensaje={greeting}/>
+    <Greeting/>
     </>
   )
 }
