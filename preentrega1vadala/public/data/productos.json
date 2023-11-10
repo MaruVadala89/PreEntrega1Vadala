@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "nombre": "Estrella Federal",
+        "precio": "$2.930",
+        "img": "/img/EstrellaFederal.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura: ",
+        "stock": 10,
+        "categoria": "interior"
+
+    },
+    {
+        
+        "id": 2,
+        "nombre": "Ficus Pandurata",
+        "precio": "$19.200",
+        "img": "/img/FicusPandurata.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura:",
+        "stock": 15,
+        "categoria": "interior"
+
+    },
+    {
+        
+        "id": 3,
+        "nombre": "Monstera",
+        "precio": "$9.912",
+        "img": "/img/Monstera.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura:",
+        "stock": 5,
+        "categoria": "interior"
+
+    },
+    {
+        "id": 4,
+        "nombre": "Peperomia Tricolor",
+        "precio": "$2.179",
+        "img": "/img/PeperomiaTricolor.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura:",
+        "stock": 30,
+        "categoria": "interior"
+
+    },
+    {
+        "id": 5,
+        "nombre": "Palo de Agua",
+        "precio": "$1.800",
+        "img": "/img/PaloDeAgua.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura:",
+        "stock": 2,
+        "categoria": "Interior"
+
+    },
+    {
+        "id": 6,
+        "nombre": "Gazania",
+        "precio": "$400",
+        "img": "/img/Gazania.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura:",
+        "stock": 11,
+        "categoria": "exterior"
+
+    },
+    {
+        "id": 7,
+        "nombre": "Lazo de Amor",
+        "precio": "$300",
+        "img": "/img/LazoDeAmor.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura:",
+        "stock": 11,
+        "categoria": "exterior"
+
+    },
+    {
+        "id": 8,
+        "nombre": "Jazmin Kimura",
+        "precio": "$4.118",
+        "img": "/img/JazminKimura.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura:",
+        "stock": 11,
+        "categoria": "exterior"
+
+    },
+    {
+        "id": 9,
+        "nombre": "Agapantos Flor Blanca",
+        "precio": "$4.758",
+        "img": "/img/AgapantosFlorBlanca.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura:",
+        "stock": 11,
+        "categoria": "exterior"
+
+    },
+    {
+        "id": 10,
+        "nombre": "Pensamiento",
+        "precio": "$1000",
+        "img": "/img/Pensamiento.jpg",
+        "descripcion": "Riego: Exposicion: Floracion: Altura:",
+        "stock": 11,
+        "categoria": "exterior"
+
+    }
+
+]
+
