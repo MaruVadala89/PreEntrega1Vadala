@@ -1,5 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import ItemList from '../ItemList/ItemList';
+import NavBar from '../NavBar/NavBar';
+
 
 
 const ItemListContainer = () => {
@@ -22,6 +24,7 @@ const ItemListContainer = () => {
 
     return (
         <>
+          
         {
             products.length == 0 
             ? <h1>Cargando...</h1> 

@@ -19,23 +19,28 @@ function App() {
   return (
     <>
 
-    <NavBar/>
 
     <BrowserRouter>
+
+    <NavBar/>
+
     <Routes>
 
+
       <Route path='/' element={<ItemListContainer/>}/> 
-      <Route path='/Detalle' element={<ItemDetailContainer/>}/>
-      <Route path='/Contacto' element={<Contacto/>}/>
-      <Route path='/Ubicacion' element={<Ubicacion/>}/>
+      <Route path='/item/:idProduct' element={<ItemDetailContainer/>}/>
+      <Route path='/contacto' element={<Contacto/>}/>
+      <Route path='/ubicacion' element={<Ubicacion/>}/>
       <Route path='*' element={<Error/>}/>
 
 
-    </Routes>   
+    </Routes>  
+
+       <Footer/> 
     
     </BrowserRouter>
 
-    <Footer/>
+ 
 
     
     </>

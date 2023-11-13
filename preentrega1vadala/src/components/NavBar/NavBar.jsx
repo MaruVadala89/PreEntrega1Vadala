@@ -4,32 +4,33 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
-  const enlaces = [
-    "contacto",
-    "ubicacion",
-    "detalle"
-  ]
 
   return (
 
     <div>
 
+      <Link to={"/"}>
+      <p>LOGO</p>
+      </Link>
+
+
       <ul>
        <li>
-                <Link to={`/Contacto`}>
+                <Link to={`/contacto`}>
                 Contacto
                 </Link>
             </li>
             <li>
-                <Link to={`/Ubicacion`}>
+                <Link to={`/ubicacion`}>
                 Ubicacion
                 </Link>
             </li>
             <li>
-                <Link to={`/Detalle`}>
+                <Link to={`/detalle`}>
                 Detalle
                 </Link>
-            </li> 
+            </li>
+         
       </ul>
 
     </div>
