@@ -9,10 +9,7 @@ import Ubicacion from './components/Ubicacion/Ubicacion'
 import Footer from './components/Footer/Footer'
 import Contacto from './components/Contacto/Contacto'
 import Error from './components/Error/Error'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-
-
-
+import { BrowserRouter, Routes, Route}  from 'react-router-dom'
 
 
 
@@ -22,13 +19,15 @@ function App() {
   return (
     <>
 
+    <NavBar/>
+
     <BrowserRouter>
     <Routes>
 
-      <Route path='/' element={<ItemListContainer/>}/> {/*siempre el primer path es '/' */}
-      <Route path='/detalle' element={<ItemDetailContainer/>}/>
-      <Route path='/contacto' element={<Contacto/>}/>
-      <Route path='/ubicacion' element={<Ubicacion/>}/>
+      <Route path='/' element={<ItemListContainer/>}/> 
+      <Route path='/Detalle' element={<ItemDetailContainer/>}/>
+      <Route path='/Contacto' element={<Contacto/>}/>
+      <Route path='/Ubicacion' element={<Ubicacion/>}/>
       <Route path='*' element={<Error/>}/>
 
 
@@ -36,9 +35,7 @@ function App() {
     
     </BrowserRouter>
 
-
-    <ItemListContainer/>
-    <ItemDetailContainer productId={2}/>
+    <Footer/>
 
     
     </>
