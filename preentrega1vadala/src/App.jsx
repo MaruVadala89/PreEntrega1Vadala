@@ -27,10 +27,11 @@ function App() {
     <Routes>
 
 
-      <Route path='/' element={<ItemListContainer/>}/> 
+      <Route path='/' element={<ItemListContainer/>}/>
+      <Route path='/:categoryId' element={<ItemListContainer/>}/>  
       <Route path='/item/:idProduct' element={<ItemDetailContainer/>}/>
-      <Route path='/contacto' element={<Contacto/>}/>
-      <Route path='/ubicacion' element={<Ubicacion/>}/>
+      <Route path='/Contacto' element={<Contacto/>}/>
+      <Route path='/Ubicacion' element={<Ubicacion/>}/>
       <Route path='*' element={<Error/>}/>
 
 

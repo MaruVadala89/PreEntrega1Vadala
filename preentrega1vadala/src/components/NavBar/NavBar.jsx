@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
+  const enlaces = [
+    "Plantas de Interior",
+    "Plantas de Exterior",
+    "Contacto",
+    "Ubicacion"
+  ]
+
 
   return (
 
@@ -15,22 +22,36 @@ const NavBar = () => {
 
 
       <ul>
-       <li>
-                <Link to={`/contacto`}>
+
+      {enlaces.map((e,id) => 
+                    <li key={id}>
+                        <Link to={`${e}`}>
+                         {e}
+                        </Link>
+                    </li>
+                )}
+
+       {/* <li>
+                <Link to={`/Contacto`}>
                 Contacto
                 </Link>
             </li>
             <li>
-                <Link to={`/ubicacion`}>
+                <Link to={`/Ubicacion`}>
                 Ubicacion
                 </Link>
             </li>
             <li>
-                <Link to={`/detalle`}>
-                Detalle
+                <Link to={`/Plantas de Interior`}>
+                Plantas de Interior
                 </Link>
             </li>
-         
+            <li>
+                <Link to={`/Plantas de Exterior`}>
+                Plantas de Exterior
+                </Link>
+            </li>
+          */}
       </ul>
 
     </div>

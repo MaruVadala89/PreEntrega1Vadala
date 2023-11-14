@@ -6,7 +6,7 @@
         "img": "/img/EstrellaFederal.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura: ",
         "stock": 10,
-        "categoria": "interior"
+        "categoria": "Plantas de Interior"
 
     },
     {
@@ -17,7 +17,7 @@
         "img": "/img/FicusPandurata.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 15,
-        "categoria": "interior"
+        "categoria": "Plantas de Interior"
 
     },
     {
@@ -28,7 +28,7 @@
         "img": "/img/Monstera.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 5,
-        "categoria": "interior"
+        "categoria": "Plantas de Interior"
 
     },
     {
@@ -38,7 +38,7 @@
         "img": "/img/PeperomiaTricolor.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 30,
-        "categoria": "interior"
+        "categoria": "Plantas de Interior"
 
     },
     {
@@ -48,7 +48,7 @@
         "img": "/img/PaloDeAgua.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 2,
-        "categoria": "Interior"
+        "categoria": "Plantas de Interior"
 
     },
     {
@@ -58,7 +58,7 @@
         "img": "/img/Gazania.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 11,
-        "categoria": "exterior"
+        "categoria": "Plantas de Exterior"
 
     },
     {
@@ -68,7 +68,7 @@
         "img": "/img/LazoDeAmor.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 11,
-        "categoria": "exterior"
+        "categoria": "Plantas de Exterior"
 
     },
     {
@@ -78,7 +78,7 @@
         "img": "/img/JazminKimura.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 11,
-        "categoria": "exterior"
+        "categoria": "Plantas de Exterior"
 
     },
     {
@@ -88,7 +88,7 @@
         "img": "/img/AgapantosFlorBlanca.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 11,
-        "categoria": "exterior"
+        "categoria": "Plantas de Exterior"
 
     },
     {
@@ -98,7 +98,7 @@
         "img": "/img/Pensamiento.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 11,
-        "categoria": "exterior"
+        "categoria": "Plantas de Exterior"
 
     }
 
