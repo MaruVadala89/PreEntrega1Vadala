@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link, NavLink } from 'react-router-dom';
+import "./NavBar.css"
 
 const NavBar = () => {
 
@@ -14,20 +14,20 @@ const NavBar = () => {
 
   return (
 
-    <div>
+    <div className='nav'>
 
-      <Link to={"/"}>
+      <Link className='enlace' to={"/"}>
       <p>LOGO</p>
       </Link>
 
 
-      <ul>
+      <ul className='enlacesContainer'>
 
       {enlaces.map((e,id) => 
-                    <li key={id}>
-                        <Link to={`${e}`}>
+                    <li className='liContainer' key={id}>
+                        <NavLink activeClassName="active" to={`${e}`}>
                          {e}
-                        </Link>
+                        </NavLink>
                     </li>
                 )}
 

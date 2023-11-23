@@ -10,19 +10,24 @@ import Footer from './components/Footer/Footer'
 import Contacto from './components/Contacto/Contacto'
 import Error from './components/Error/Error'
 import { BrowserRouter, Routes, Route}  from 'react-router-dom'
-
-
+import NavBoot from './components/NavBoot/NavBoot'
+import CartWidget from './components/CartWidget/CartWidget'
 
 function App() {
-  
+
+
 
   return (
     <>
-
-
+    
+    
     <BrowserRouter>
 
+    <NavBoot/>
+
     <NavBar/>
+
+
 
     <Routes>
 
@@ -32,6 +37,7 @@ function App() {
       <Route path='/item/:idProduct' element={<ItemDetailContainer/>}/>
       <Route path='/Contacto' element={<Contacto/>}/>
       <Route path='/Ubicacion' element={<Ubicacion/>}/>
+      <Route path='/CartWidget' element={<CartWidget/>}/>
       <Route path='*' element={<Error/>}/>
 
 
@@ -39,9 +45,10 @@ function App() {
 
        <Footer/> 
     
-    </BrowserRouter>
+    </BrowserRouter> 
 
- 
+
+  
 
     
     </>
