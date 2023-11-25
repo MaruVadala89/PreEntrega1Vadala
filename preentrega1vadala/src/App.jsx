@@ -1,4 +1,4 @@
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -9,9 +9,10 @@ import Ubicacion from './components/Ubicacion/Ubicacion'
 import Footer from './components/Footer/Footer'
 import Contacto from './components/Contacto/Contacto'
 import Error from './components/Error/Error'
-import { BrowserRouter, Routes, Route}  from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBoot from './components/NavBoot/NavBoot'
-import CartWidget from './components/CartWidget/CartWidget'
+import Cart from './components/Cart/Cart'
+import { CartProvider } from './context/CartContext'
 
 function App() {
 
@@ -19,38 +20,41 @@ function App() {
 
   return (
     <>
-    
-    
-    <BrowserRouter>
-
-    <NavBoot/>
-
-    <NavBar/>
 
 
+      <BrowserRouter>
 
-    <Routes>
+        <CartProvider>
 
+          <NavBoot />
 
-      <Route path='/' element={<ItemListContainer/>}/>
-      <Route path='/:categoryId' element={<ItemListContainer/>}/>  
-      <Route path='/item/:idProduct' element={<ItemDetailContainer/>}/>
-      <Route path='/Contacto' element={<Contacto/>}/>
-      <Route path='/Ubicacion' element={<Ubicacion/>}/>
-      <Route path='/CartWidget' element={<CartWidget/>}/>
-      <Route path='*' element={<Error/>}/>
+          <NavBar />
 
 
-    </Routes>  
 
-       <Footer/> 
-    
-    </BrowserRouter> 
+          <Routes>
 
 
-  
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/:categoryId' element={<ItemListContainer />} />
+            <Route path='/item/:idProduct' element={<ItemDetailContainer />} />
+            <Route path='/Contacto' element={<Contacto />} />
+            <Route path='/Ubicacion' element={<Ubicacion />} />
+            <Route path='/Cart' element={<Cart />} />
+            <Route path='*' element={<Error />} />
 
-    
+
+          </Routes>
+
+          <Footer />
+
+        </CartProvider>
+
+      </BrowserRouter>
+
+
+
+
     </>
 
   )
