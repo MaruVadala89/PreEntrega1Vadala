@@ -41,7 +41,7 @@ export const CartProvider = ({ children }) => {
 
     //FUNCION QUE REMUEVE PRODUCTOS DEL CARRITO
 
-    const removeItems = (id) => {
+    const removeItem = (id) => {
         const filtrarCarrito = cart.filter((item) => item.producto.id !== id)
         setCart(filtrarCarrito)
     }
@@ -60,7 +60,7 @@ export const CartProvider = ({ children }) => {
                 addToCart,
                 isInCart,
                 getTotalItems,
-                removeItems,
+                removeItem,
                 clearCart
 
             }

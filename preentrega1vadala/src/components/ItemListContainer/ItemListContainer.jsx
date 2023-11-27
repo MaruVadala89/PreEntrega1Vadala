@@ -34,7 +34,7 @@ const ItemListContainer = () => {
                 .catch((error) => console.log(error)) /*Manejo de errores*/
                 .finally(()=>setLoading(false));
         }
-        setTimeout(()=> fetchData(), 3000) // antes solo estaba fetchData(), se carga todo al toque
+        setTimeout(()=> fetchData(), 2000) // antes solo estaba fetchData(), se carga todo al toque
 
 
     }, [categoryId]) /*Sin dependencia lo ejecuta una vez*/
