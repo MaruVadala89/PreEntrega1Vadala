@@ -15,8 +15,9 @@ const ItemListContainer = () => {
 
     useEffect(() => {
 
+        setLoading(true);
+        
         const fetchData = () => {
-            setLoading(true) //cada vez que se cambio la categoria, necesitamos que el cargando sea true
 
             return fetch("/data/productos.json") //Trae productos
                 .then((response) => response.json()) //Los convierte a json
