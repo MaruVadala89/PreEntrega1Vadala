@@ -10,7 +10,7 @@ const ItemDetail = ({producto}) => {
     const [quantity,setQuantity] = useState(0)
 
 //7° IMPLEMENTAR USECONTEXT PARA CONSUMIR EL CONTEXTO
-    const {hola} = useContext(CartContext)
+    const {hola} = useContext(CartContext) //Recibimos las funciones creadas en Cart Context.
 
     const onAdd = (cantidad) => { 
         setQuantity (cantidad)
