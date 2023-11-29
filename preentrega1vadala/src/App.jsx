@@ -12,9 +12,27 @@ import Error from './components/Error/Error'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBoot from './components/NavBoot/NavBoot'
 import Cart from './components/Cart/Cart'
-import { CartProvider } from './context/CartContext'
+//4° IMPORTAR EL PROVEEDOR DEL CONTEXTO
+import {CartProvider}from './context/CartContext'
+import {getFirestore, collection, getDocs} from "firebase/firestore"
 
 function App() {
+
+  const [product, setProduct] = useState(null)
+
+  useEffect (()=> {
+
+    const db = getFirestore()
+
+    const collectionRef = collection(db, "Productos"); //1° Base de datos. 2° Nombre de coleccion
+
+    getDocs (collectionRef).then((captura)=> {
+      setProduct(captura.docs.map((doc)=> (
+        {id:doc.id,...doc.data()} // Trae id, luego desestructura el resto de los parametros (categoria, precio etc)
+      )))
+    })
+
+  }, [])
 
 
 
@@ -23,13 +41,13 @@ function App() {
 
 
       <BrowserRouter>
+      {/* 5° ENGLOBAR LA APP CON EL CONTEXTO */}
 
-        <CartProvider>
+      <CartProvider>
 
-          <NavBoot />
+          <NavBoot/>
 
-          <NavBar />
-
+          <NavBar/>
 
 
           <Routes>
@@ -48,7 +66,7 @@ function App() {
 
           <Footer />
 
-        </CartProvider>
+          </CartProvider>
 
       </BrowserRouter>
 

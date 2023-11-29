@@ -4,7 +4,7 @@
         "nombre": "Estrella Federal",
         "precio": "$2.930",
         "img": "/img/EstrellaFederal.jpg",
-        "descripcion": "Riego: Exposicion: Floracion: Altura: ",
+        "descripcion": "Follaje: perenne. Riego: regular. Exposición: buena luminosidad pero no sol directo. Altura: hasta 2m. Floración: primavera-verano. ",
         "stock": 10,
         "categoria": "Plantas de Interior"
 
@@ -67,17 +67,17 @@
         "precio": "$300",
         "img": "/img/LazoDeAmor.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
-        "stock": 11,
+        "stock": 2,
         "categoria": "Plantas de Exterior"
 
     },
     {
         "id": 8,
-        "nombre": "Jazmin Kimura",
+        "nombre": "Jazmin",
         "precio": "$4.118",
         "img": "/img/JazminKimura.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
-        "stock": 11,
+        "stock": 20,
         "categoria": "Plantas de Exterior"
 
     },
@@ -97,7 +97,7 @@
         "precio": "$1000",
         "img": "/img/Pensamiento.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
-        "stock": 11,
+        "stock": 3,
         "categoria": "Plantas de Exterior"
 
     }
