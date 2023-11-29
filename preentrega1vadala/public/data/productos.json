@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nombre": "Estrella Federal",
-        "precio": "$2.930",
+        "precio": 2930,
         "img": "/img/EstrellaFederal.jpg",
         "descripcion": "Follaje: perenne. Riego: regular. Exposición: buena luminosidad pero no sol directo. Altura: hasta 2m. Floración: primavera-verano. ",
         "stock": 10,
@@ -13,7 +13,7 @@
         
         "id": 2,
         "nombre": "Ficus Pandurata",
-        "precio": "$19.200",
+        "precio": 19200,
         "img": "/img/FicusPandurata.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 15,
@@ -24,7 +24,7 @@
         
         "id": 3,
         "nombre": "Monstera",
-        "precio": "$9.912",
+        "precio": 9912,
         "img": "/img/Monstera.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 5,
@@ -34,7 +34,7 @@
     {
         "id": 4,
         "nombre": "Peperomia Tricolor",
-        "precio": "$2.179",
+        "precio": 2179,
         "img": "/img/PeperomiaTricolor.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 30,
@@ -44,7 +44,7 @@
     {
         "id": 5,
         "nombre": "Palo de Agua",
-        "precio": "$1.800",
+        "precio": 1800,
         "img": "/img/PaloDeAgua.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 2,
@@ -54,7 +54,7 @@
     {
         "id": 6,
         "nombre": "Gazania",
-        "precio": "$400",
+        "precio": 400,
         "img": "/img/Gazania.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 11,
@@ -64,7 +64,7 @@
     {
         "id": 7,
         "nombre": "Lazo de Amor",
-        "precio": "$300",
+        "precio": 300,
         "img": "/img/LazoDeAmor.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 2,
@@ -74,7 +74,7 @@
     {
         "id": 8,
         "nombre": "Jazmin",
-        "precio": "$4.118",
+        "precio": 4118,
         "img": "/img/JazminKimura.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 20,
@@ -84,7 +84,7 @@
     {
         "id": 9,
         "nombre": "Agapantos Flor Blanca",
-        "precio": "$4.758",
+        "precio": 4758,
         "img": "/img/AgapantosFlorBlanca.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 11,
@@ -94,7 +94,7 @@
     {
         "id": 10,
         "nombre": "Pensamiento",
-        "precio": "$1000",
+        "precio":1000,
         "img": "/img/Pensamiento.jpg",
         "descripcion": "Riego: Exposicion: Floracion: Altura:",
         "stock": 3,

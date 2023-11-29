@@ -1,17 +1,26 @@
-import React, {useContext} from 'react';
-import { CartContext } from '../../context/CartContext';
-
+import React, { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 const Cart = () => {
 
-    const {} = useContext(CartContext) //Le pasamos como parametro la instancia del contexto. 
-                                        // Aca tambien podemos recibir funciones. 
-    return (
+  const {cart,total, clearCart} = useContext(CartContext);
 
-        <h1>To carrito</h1>
+  
+  return (
+    <div>
 
+      <h1>Tu Carrito</h1>
 
-    );
+      <div>
+
+      </div>
+
+      <h2>Valor total: ${total}</h2>
+      
+      <button onClick={()=>{clearCart()}}>Limpiar carrito</button>
+     
+    </div>
+  );
 };
 
 export default Cart;
