@@ -9,8 +9,8 @@ export const CartProvider = ({ children }) => {     //El proveedor, recibe como 
     //CUERPO DEL CONTEXTO
 
     //8° Creamos carrito, inicialmente vacio. Total y Cantidad
-    const [cart, setCart] = useState([]) 
-    const [total,setTotal] = useState(0)
+    const [cart, setCart] = useState([])
+    const [total, setTotal] = useState(0)
     const [cantidadTotal, setCantidadTotal] = useState(0)
 
     //9° Funciones 
@@ -20,8 +20,8 @@ export const CartProvider = ({ children }) => {     //El proveedor, recibe como 
         const productoExistente = cart.find(prod => prod.producto.id === producto.id);
 
         if (!productoExistente) {
-           
-            setCart(prev => [...prev, {producto, cantidad }])
+
+            setCart(prev => [...prev, { producto, cantidad }])
             setCantidadTotal(prev => prev + cantidad)
             setTotal(prev => prev + (producto.precio * cantidad))
         }
@@ -46,14 +46,19 @@ export const CartProvider = ({ children }) => {     //El proveedor, recibe como 
 
 
     //Remover del carrito
-    const removeItem = () => {
+    const removeItem = (id) => {
+        const productoEliminado = cart.find(prod => prod.producto.id === id);
+        const carritoActualizado = cart.filter(prod => prod.producto.id !== id);
 
-    }
+        setCart(carritoActualizado);
+        setCantidadTotal(prev => prev - productoEliminado.cantidad);
+        setTotal(prev => prev - productoEliminado.producto.precio * productoEliminado.cantidad);
+    };
 
 
     //Limpiar carrito
     const clearCart = () => {
-        setCart ([]);
+        setCart([]);
         setCantidadTotal(0);
         setTotal(0);
 
