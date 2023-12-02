@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore"
 
 
 
@@ -13,32 +14,40 @@ const ItemListContainer = () => {
     const { categoryId } = useParams()
 
 
-    useEffect(() => {
+    useEffect(() => 
+    {
+        //INICIAMOS EL ESTADO DE CARGA DE PRODUCTOS
 
         setLoading(true);
-        
-        const fetchData = () => {
 
-            return fetch("/data/productos.json") //Trae productos
-                .then((response) => response.json()) //Los convierte a Json
-                .then((data) => {
-                    if (categoryId) {
-                        const filterProducts = data.filter(p => p.categoria == categoryId)
-                        setProducts(filterProducts)
+        //CREAMOS BASE DE DATOS
+        const db = getFirestore()
 
-                    } else {
-                        setProducts(data)
+        //FILTRAMOS PRODUCTOS CON QUERY Y WHERE
 
-                    }
+        const misProductos = categoryId
+            ? query(collection(db, "productos", where("categoria", "==", categoryId)))
+            : collection(db, "productos")
 
-                })//Incorpora los productos en la funcion, cambiando el estado de products (valor incial vacio)
-                .catch((error) => console.log(error)) //Manejo de errores
-                .finally(()=>setLoading(false));
-        }
-        setTimeout(()=> fetchData(), 2000) // Antes solo estaba fetchData(), se carga todo al toque
+        //GENERAMOS DOCUMENTOS
+        getDocs(misProductos)
+            .then((res) => {
+                const nuevosProductos = res.docs.map((doc) => {
+                    const data = doc.data()
+                    return { id: doc.id, ...data }
+                })
+                setProducts(nuevosProductos)
+            })
+            .catch((error) => console.log(error))
+            .finally(() => {
+
+                //CANCELAMOS LOADING Y SE MUESTRAN PRODUCTOS
+                setLoading(false)
+            })
 
 
-    }, [categoryId]) //Sin dependencia lo ejecuta una vez
+
+    }, [categoryId]); //Sin dependencia lo ejecuta una vez
 
     return (
         <>

@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Item = ({product}) => {
+const Item = ({ product }) => {
     return (
         <>
 
-        <div className= 'contenedor'>
-        <Link to={`/item/${product.id}`}>
-            <h1>{product.nombre}</h1>
-        </Link>
+            <div className='contenedor'>
+                <Link to={`/item/${product.id}`}>
+                    <h1>{product.nombre}</h1>
+                </Link>
 
-            <img src={product.img} alt={product.nombre} />
-            
-        </div>
+                <img src={product.img} alt={product.nombre} />
 
-            
+            </div>
+
+
         </>
     );
 };
