@@ -10,7 +10,7 @@ const {cantidadTotal} = useContext(CartContext)
 
     return (
         <div>
-            <Link to="/cart">
+            <Link to="/Cart">
             <p>ICONO DE CARRITO</p>
             </Link>
             
