@@ -9,6 +9,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
+    list-style: none;
+    text-decoration: none;
+ }
+
+ li {
+    margin-right: 10px;
  }
 
 .liContainer {

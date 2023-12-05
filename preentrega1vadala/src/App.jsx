@@ -32,9 +32,6 @@ function App() {
 
           <NavBoot/>
 
-          <NavBar/>
-
-
           <Routes>
 
 

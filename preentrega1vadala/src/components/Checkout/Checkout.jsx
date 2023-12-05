@@ -52,7 +52,7 @@ const Checkout = () => {
         //GENERAMOS LOGICA PARA LA ORDEN Y REDUCCION DE STOCK
         Promise.all(
             orden.items.map(async (productoOrden) => {
-                const productoRef = doc(db, "Productos", productoOrden)
+                const productoRef = doc(db, "Productos", productoOrden.id)
                 const productoDoc = await getDoc(productoRef)
                 const stockActual = productoDoc.data().stock
 
