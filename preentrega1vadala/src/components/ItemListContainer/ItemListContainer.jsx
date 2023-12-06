@@ -40,7 +40,7 @@ const ItemListContainer = () => {
                 setLoading(false)
             })
 
-    }, [categoryId]); //Sin dependencia lo ejecuta una vez
+    }, [categoryId]); 
 
     return (
         <>

@@ -13,20 +13,18 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBoot from './components/NavBoot/NavBoot'
 import Cart from './components/Cart/Cart'
 import Checkout from './components/Checkout/Checkout'
-//4° IMPORTAR EL PROVEEDOR DEL CONTEXTO
+//4° IMPORTAMOS EL PROVEEDOR DEL CONTEXTO
 import {CartProvider}from './context/CartContext'
 
 
-function App() {
-
-  
+function App() { 
 
   return (
     <>
 
 
       <BrowserRouter>
-      {/* 5° ENGLOBAR LA APP CON EL CONTEXTO */}
+      {/* 5° ENGLOBAMOS LA APP CON EL CONTEXTO */}
 
       <CartProvider>
 
@@ -47,7 +45,7 @@ function App() {
 
           </Routes>
 
-          <Footer />
+          <Footer/>
 
           </CartProvider>
 
